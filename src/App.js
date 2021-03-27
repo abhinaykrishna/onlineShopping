@@ -1,23 +1,45 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
-import HomePage from "./components/pages/home/homepage";
-import ShopPage from "./components/pages/shop/shop-page";
+import HomePage from "./pages/home/homepage";
+import ShopPage from "./pages/shop/shop-page";
 import Header from "./components/header/header";
-import Login from "./components/pages/login/login";
+import Login from "./pages/login/login";
+import { auth } from "./firebase/firebase.utils";
 
-function App() {
-  // document.title = "Online Shopping";
-  return (
-    <div>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/shop" component={ShopPage} />
-        <Route path="/login" component={Login} />
-      </Switch>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      currentUser: null,
+    };
+  }
+  unsubscribeFromAuth = null;
+
+  componentDidMount() {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged((user) => {
+      this.setState({ currentUser: user });
+      console.log(user);
+    });
+  }
+
+  componentWillUnmount() {
+    this.unsubscribeFromAuth();
+  }
+
+  render() {
+    return (
+      <div>
+        <Header currentUser={this.state.currentUser} />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/shop" component={ShopPage} />
+          <Route path="/signin" component={Login} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import MenuItem from "../menu/menu-items";
 import "./directory.styles.scss";
 
-function Directory() {
-  const products = [
+class Directory extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      category: this.products,
+    };
+  }
+
+  products = [
     {
       id: 1,
       title: "Watches",
@@ -56,19 +64,20 @@ function Directory() {
         "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
     },
   ];
-  const [category, setCategory] = useState(products);
-  return (
-    <div className="directory-menu">
-      {category.map((product) => (
-        <MenuItem
-          key={product.id}
-          title={product.title}
-          image={product.imageUrl}
-          size={product.size}
-        />
-      ))}
-    </div>
-  );
+  render() {
+    return (
+      <div className="directory-menu">
+        {this.state.category.map((product) => (
+          <MenuItem
+            key={product.id}
+            title={product.title}
+            image={product.imageUrl}
+            size={product.size}
+          />
+        ))}
+      </div>
+    );
+  }
 }
 
 export default Directory;
