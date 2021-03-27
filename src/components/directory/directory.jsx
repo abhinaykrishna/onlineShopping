@@ -37,9 +37,9 @@ function Directory() {
     },
     {
       id: 6,
-      title: "Jackets",
+      title: "Beauty & Care",
       imageUrl:
-        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10604552/2019/9/12/9755b08f-0ddb-421b-a9c9-8c48af2765bc1568291650922-SASSAFRAS-Women-Jackets-8211568291648962-2.jpg",
+        "https://images.unsplash.com/photo-1591019479261-1a103585c559?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80g",
     },
     {
       id: 7,
