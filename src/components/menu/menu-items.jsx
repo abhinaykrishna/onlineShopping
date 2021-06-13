@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import "./menu-item.styles.scss";
 
-function MenuItem({ title, image, size, history, match }) {
+function MenuItem({ title, imageUrl, size, history, match }) {
   return (
     <div
       className={`${size} menu-item`}
@@ -10,7 +10,7 @@ function MenuItem({ title, image, size, history, match }) {
     >
       <div
         className="background-image"
-        style={{ backgroundImage: `url(${image})` }}
+        style={{ backgroundImage: `url(${imageUrl})` }}
       />
       <div className="content">
         <h1 className="title">{title}</h1>
