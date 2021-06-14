@@ -5,18 +5,21 @@ const INITIAL_STATE = {
       title: "Watches",
       imageUrl:
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=612&q=80",
+      linkUrl: "shop/watches",
     },
     {
       id: 2,
       title: "Sneakers",
       imageUrl:
         "https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      linkUrl: "shop/sneakers",
     },
     {
       id: 3,
       title: "Jeans",
       imageUrl:
         "https://images.unsplash.com/photo-1560243563-062bfc001d68?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
+      linkUrl: "shop/jeans",
     },
 
     {
@@ -24,18 +27,21 @@ const INITIAL_STATE = {
       title: "SunGlasses",
       imageUrl:
         "https://images.unsplash.com/photo-1590564310418-66304f55a2c2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
+      linkUrl: "shop/sunglasses",
     },
     {
       id: 5,
       title: "Suits & Blazers",
       imageUrl:
         "https://images.unsplash.com/photo-1577204979921-ce69d69a88cf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
+      linkUrl: "shop/suits",
     },
     {
       id: 6,
       title: "Beauty & Care",
       imageUrl:
         "https://images.unsplash.com/photo-1591019479261-1a103585c559?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80g",
+      linkUrl: "shop/beauty",
     },
     {
       id: 7,
@@ -43,6 +49,7 @@ const INITIAL_STATE = {
       size: "large",
       imageUrl:
         "https://images.unsplash.com/photo-1599751449303-536e27b4019a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80",
+      linkUrl: "shop/men",
     },
     {
       id: 8,
@@ -50,6 +57,7 @@ const INITIAL_STATE = {
       size: "large",
       imageUrl:
         "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
+      linkUrl: "shop/women",
     },
   ],
 };
