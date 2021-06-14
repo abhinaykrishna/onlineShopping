@@ -8,6 +8,7 @@ import {
 
 import "./checkout.styles.scss";
 import CheckoutItem from "../../components/checkout-item/checkout-item";
+import StripeCheckoutButton from "../../components/stripe-button/stripe-button";
 
 const CheckoutPage = ({ cartItems, total }) => {
   return (
@@ -35,6 +36,16 @@ const CheckoutPage = ({ cartItems, total }) => {
       <div className="total">
         <span>Total: ₹{total}</span>
       </div>
+      <div className="test-warning">
+        <strong>
+          *Please use the following test credit card for payments*
+          <br />
+          4242 4242 4242 4242 - Exp : any future date - CVV - any 3 digit number
+          <br />
+          https://stripe.com/docs/testing#cards
+        </strong>
+      </div>
+      <StripeCheckoutButton price={total} />
     </div>
   );
 };

@@ -1,5 +1,5 @@
-const CollectionData = [
-  {
+const CollectionData = {
+  watches: {
     id: 1,
     title: "Watches",
     routeName: "watches",
@@ -69,7 +69,7 @@ const CollectionData = [
       },
     ],
   },
-  {
+  sneakers: {
     id: 2,
     title: "Sneakers",
     routeName: "sneakers",
@@ -139,7 +139,7 @@ const CollectionData = [
       },
     ],
   },
-  {
+  jeans: {
     id: 3,
     title: "Jeans",
     routeName: "jeans",
@@ -209,7 +209,7 @@ const CollectionData = [
       },
     ],
   },
-  {
+  sunglasses: {
     id: 4,
     title: "SunGlasses",
     routeName: "sunGlasses",
@@ -279,7 +279,7 @@ const CollectionData = [
       },
     ],
   },
-  {
+  suits: {
     id: 5,
     title: "Suits",
     routeName: "suits",
@@ -349,7 +349,7 @@ const CollectionData = [
       },
     ],
   },
-  {
+  beauty: {
     id: 6,
     title: "Beauty Care",
     routeName: "beautyCare",
@@ -419,7 +419,7 @@ const CollectionData = [
       },
     ],
   },
-  {
+  men: {
     id: 7,
     title: "Men",
     routeName: "men",
@@ -489,7 +489,7 @@ const CollectionData = [
       },
     ],
   },
-  {
+  women: {
     id: 8,
     title: "Women",
     routeName: "women",
@@ -559,6 +559,6 @@ const CollectionData = [
       },
     ],
   },
-];
+};
 
 export default CollectionData;
